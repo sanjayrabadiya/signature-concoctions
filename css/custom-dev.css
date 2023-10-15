@@ -365,8 +365,9 @@ footer{background-color: var(--gray-bg);}
 .subscribe-form .subscribe-input-field{width: 100%;}
 .subscribe-form .form-field{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 .input-field{width: 100%;margin: 12px 0;}
-.input-field input{width: 100%;padding: 12px 16px;color: var(--black);font-size: 20px;font-style: normal;font-weight: 300;line-height: 1.7;letter-spacing: 2px;text-transform: uppercase;}
-
+.input-field input,
+.input-field textarea{width: 100%;padding: 12px 16px;color: var(--black);font-size: 20px;font-style: normal;font-weight: 300;line-height: 1.7;letter-spacing: 2px;text-transform: uppercase;}
+.input-field textarea{min-height: 150px;}
 /***** Product box ******/
 .product-box{width: 100%;position: relative;text-align: center;}
 .product-box .image-box{width: 100%;position: relative;overflow: hidden;}
@@ -530,10 +531,48 @@ footer{background-color: var(--gray-bg);}
 .recipes-single-filter-list ul li label:focus {display: inline-block;vertical-align: top;width: calc(100% - 21px);font-family: var(--primary-font);font-weight: 400;font-size: 16px;line-height: 20px;color: var(--black);margin: 0px;padding: 0px 0px;}
 .recipes-single-filter-list ul li input.input-radio:checked,
 .recipes-single-filter-list ul li input[type=checkbox]:checked  {background-color: var(--black);}
+.recipes-single-filter-list p{margin-top: 10px;}
 .recipes-single-filter-submit{display: block;width: 100%;max-width: 100%;text-align: center;margin-top: 20px;}
 .recipes-single-filter-submit .btn-custom{display: inline-block;}
 /***************** Recipes details plugin css ***********/
 
+.contact-head{padding: 80px 0;}
+.contact-head .wrapper{display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;}
+.contact-head .contact-image{width: 49%;}
+.contact-head .contact-image img{width: 100%;height: auto;}
+.contact-head .sec-heading{width: 40%;text-align: center;}
+.work-to-gether{padding: 0 0;}
+.work-to-gether .wrapper{max-width: 540px;margin: 0 auto;}
+.recipes-filter-wrapper-contact{background-color: transparent;}
+.recipes-single-filter-title a span {position: absolute;right: 15px;font-size: 24px;top: 50%;font-family: var(--primary-font);width: 15px;height: 15px;display: flex;align-items: center;justify-content: center;transform: translateY(-50%);}
+.recipes-single-filter-title a span.opened, 
+.recipes-single-filter-title.active a span.closed {display: none;}
+.recipes-single-filter-title.active a span.opened {display: flex;}
+.contact-me{padding: 80px 0;}
+.contact-form{max-width: 540px;margin: 0 auto;margin-top: 25px;}
+.contact-form .form-submit button{width: 100%;text-align: center;    justify-content: center;}
+
+.about-page{padding: 80px 0;}
+.about-page .wrapper{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.about-left{width: 65%;}
+.about-left h4{margin-top: 0;}
+.about-us-image {margin: 15px 0;}
+.about-us-image img{max-width:100%;height: auto;}
+.about-left .description p{margin-top: 15px;}
+.about-right{width: 32%;}
+.recipes-form {background-color: var(--orange);padding: 28px 18px;text-align: center;}
+.about-right .recipes-form .sec-heading h4,
+.about-right .recipes-form .sec-heading p{color: var(--white);}
+.sign-up-form .form-submit .btn-custom-orange{width: 100%;justify-content: center;background: var(--white);color: var(--black);}
+.sign-up-form .image-box {width: 100%;margin-top: 64px;}
+.sign-up-form .image-box img {width: 100%;height: auto;}
+.button-pin {background-color: var(--white);color: var(--black);text-align: center;font-family: var(--primary-font);font-size: 26.6px;font-style: normal;font-weight: 200;line-height: 0.88;letter-spacing: 2.772px;padding: 23px 20px 18px;border: 0;text-transform: uppercase;position: relative;margin: 0 auto;width: 100%;margin-top: -23px;z-index: 1;}
+.most-popular {margin-top: 67px;}
+.most-popular-list .item {display: flex;align-items: center;margin-top: 30px;}
+.most-popular-list .item .image-box {width: 39%;}
+.most-popular-list .item .image-box img {width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
+.most-popular-list .item .content {width: 61%;padding-left: 40px;}
+.most-popular-list .item .content h4 {color: var(--black);font-family: var(--primary-font);font-size: 16.8px;font-style: normal;font-weight: 400;line-height: 1.33;letter-spacing: 1.26px;text-transform: uppercase;}
 
 @media only screen and (min-width: 1600px) and (max-width:1800px) {
   
@@ -576,6 +615,10 @@ footer{background-color: var(--gray-bg);}
   .lifestyle-slider .content { padding: 20px;}
   .footer-top {padding: 50px 0 40px;}
   .footer-bottom {padding: 24px 0;}
+
+  .contact-head{padding: 50px 0;}
+  .contact-me{padding: 50px 0;}
+ 
 
   
 }
@@ -651,6 +694,13 @@ footer{background-color: var(--gray-bg);}
   .footer-top{padding: 40px 0;}
   .footer-top .social-media {margin-top: 25px;}
   .footer-bottom {padding: 20px 0;}
+
+  .contact-head{padding: 40px 0;}
+  .contact-me{padding: 40px 0;}
+  .about-page {padding:40px 0;}
+  .most-popular { margin-top: 40px;}
+  .button-pin{font-size: 20px;}
+  .most-popular-list .item .content {padding-left: 30px;}
 
 
 }
@@ -751,6 +801,16 @@ footer{background-color: var(--gray-bg);}
   .sidebar-filter {width: 33%;padding: 8px 0px 0 0;}
   .recipes-products{width: 67%;padding-left: 8px;}
   .recipes-products .item{width: 50%;}
+
+  .contact-head{padding: 25px 0;}
+  .contact-head .sec-heading{width: 45%;}
+  .contact-me{padding: 25px 0;}
+
+  .about-page {padding:25px 0;}
+  .button-pin{padding: 10px 5px 10px;font-size: 16px;}
+  .most-popular { margin-top: 25px;}
+  .most-popular-list .item { margin-top: 15px;}
+  .most-popular-list .item .content { padding-left: 15px;}
 
   
 }
@@ -884,6 +944,21 @@ footer{background-color: var(--gray-bg);}
   .sidebar-filter{width: 100%;padding: 0;}
   .recipes-products{width: 100%;}
   .recipes-products .item{width: 50%;}
+  .contact-head{padding: 15px 0;}
+  .contact-head .contact-image{width: 100%;}
+  .contact-head .sec-heading{width: 100%;margin-top: 15px;}
+  .work-to-gether .recipes-filter-wrapper{padding: 0;}
+  .contact-me{padding: 15px 0;}
+
+  .about-page{padding: 15px 0;}
+  .about-left{width: 100%;    text-align: center;}
+  .about-right{width: 100%;margin-top: 15px;}
+  .recipes-form {padding: 5px 18px 20px;}
+  .sign-up-form .image-box{margin-top: 15px;}
+  .button-pin {font-size: 20px;}
+  .most-popular {margin-top: 20px;}
+  .most-popular-list .item{margin-top: 20px;}
+  .most-popular-list .item .content { padding-left: 15px;}
 
 
 
