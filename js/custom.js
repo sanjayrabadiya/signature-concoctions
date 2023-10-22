@@ -92,9 +92,44 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
-		
+    var showChar = 132; 
+    var ellipsestext = "...";
+    var moretext = "Read More >>";
+    var lesstext = "Read Less >>";  
+	if($('.more').length > 0){  
+		$('.more').each(function() {
+			var content = $(this).html(); 
+			if(content.length > showChar) { 
+				var c = content.substr(0, showChar);
+				var h = content.substr(showChar, content.length - showChar); 
+				var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+				$(this).html(html);
+			} 
+		}); 
+		$(".morelink").click(function(){
+			if($(this).hasClass("less")) {
+				$(this).removeClass("less");
+				$(this).html(moretext);
+			} else {
+				$(this).addClass("less");
+				$(this).html(lesstext);
+			}
+			$(this).parent().prev().toggle();
+			$(this).prev().toggle();
+			return false;
+		});
+	}
+	if($('.faq-accordion').length > 0){
+		$('.faq-accordion .item').click(function(){
+			$(this).toggleClass(' active ');
+			$(this).siblings().removeClass(' active '); 
+			$('.faq-answer').stop().slideUp();
+			$('.active .faq-answer').stop().slideDown();
+			return false;
+		});
+	}
 });
+
 $(window).on('resize', function() {
 	if($('.bannner-slider').length > 0) {
 		$('.bannner-slider').slick('resize');
