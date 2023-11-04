@@ -120,6 +120,7 @@
   --orange:#FF9340;
   --heading-color:#7D533A;
   --text-color:#000;
+  --gray-second:#D9D9D9;
   --primary-font: 'Inter', sans-serif;
   --heading-font: 'Bodoni Sans Text', sans-serif;
   --second-font: 'Proxima Nova';
@@ -271,7 +272,7 @@ textarea:-moz-placeholder {color:  var(--black);}
 .slick-next{right: 0;}
 .slick-prev{left: 0;}
 
-.sec-heading h2{color: #000;font-family: var(--primary-font);font-size: 25.298px;font-style: normal;font-weight: 400;line-height: 1.29;letter-spacing: 5.186px;display: inline-block;position: relative;text-transform: uppercase;}
+.sec-heading h2{color: var(--black);font-family: var(--primary-font);font-size: 25.298px;font-style: normal;font-weight: 400;line-height: 1.29;letter-spacing: 5.186px;display: inline-block;position: relative;text-transform: uppercase;}
 .sec-heading h2::before,
 .sec-heading h2::after{content: ""; background: var(--orange);width: 67px; height: 1px;position: absolute;top:50%;transform: translateY(-50%);}
 .sec-heading h2::before{right: 100%;margin-right: 15px;}
@@ -294,7 +295,7 @@ header{width: 100%;position: relative;}
 .social-media a:hover{color: var(--white);background-color: var(--heading-color);}
 .annoucebar .content{color: var(--white);text-align: center;font-size: 16px;font-style: normal;font-weight: 700;line-height: 1.20;letter-spacing: 4.338px;text-transform: uppercase;}
 .annoucebar .content a{color: var(--white);}
-.main-header{padding: 0;border-bottom: 4px solid #D9D9D9;padding: 23px 0;border-bottom: 1px solid var(--black);}
+.main-header{padding: 0;border-bottom: 4px solid var(--gray-second);padding: 23px 0;border-bottom: 1px solid var(--black);}
 .pattern{position: absolute;}
 .banner-content .pattern img{object-fit: cover;object-position: center center;height: auto;}
 .banner-content .pattern-1{right: -30px;top: 0;    z-index: 1;}
@@ -326,7 +327,7 @@ footer{background-color: var(--gray-bg);}
 .footer-top .footer-logo img{height:68px; width: auto;}
 .footer-top .footer-right{width: 24%;}
 .footer-subscribe h2{color: var(--black);font-family: var(--heading-font);font-size: 20px;font-style: normal;font-weight: 400;line-height: 0.9;text-transform: uppercase;margin-bottom: 10px;}
-.footer-subscribe .input-subscribe{border-bottom: 1px solid #000;margin-bottom: 20px;}
+.footer-subscribe .input-subscribe{border-bottom: 1px solid var(--black);margin-bottom: 20px;}
 .footer-subscribe .input-subscribe input{color: var(--black);font-size: 14px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: 0.9px;text-transform: uppercase;padding: 10px 0px 7px 0px;background: transparent;  border: 0;}
 .btn-submit-subscribe{background-color: transparent;border: 0;padding: 0;color:var(--black);font-size: 14px;font-style: normal;font-weight: 400;line-height: 1.28;letter-spacing: 0.9px;text-transform: uppercase;}
 
@@ -430,7 +431,7 @@ footer{background-color: var(--gray-bg);}
 
 .tempting-concoctions{padding: 80px 0;background-color: var(--white);}
 .tempting-concoctions .product-list .item{width: 25%;    padding: 11px;}
-.tempting-link{max-width: 76%; margin:40px auto;border-top:1px solid #D9D9D9;border-bottom:1px solid #D9D9D9;padding: 15px 0;display: flex;align-items: center;justify-content: center;}
+.tempting-link{max-width: 76%; margin:40px auto;border-top:1px solid var(--gray-second);border-bottom:1px solid var(--gray-second);padding: 15px 0;display: flex;align-items: center;justify-content: center;}
 .tempting-link .item{margin: 0 30px;}
 .tempting-link .item a{color: var(--black);font-size: 21px;font-style: normal;font-weight: 400;line-height: 1.66;letter-spacing: 1.05px;text-transform: uppercase;border-bottom: 4px solid transparent;white-space: nowrap;}
 .tempting-link .item a.active{border-bottom-color: var(--orange);}
@@ -587,8 +588,8 @@ footer{background-color: var(--gray-bg);}
 .recipe-faqs{border-top:1px solid var(--black);border-bottom:1px solid var(--black);padding: 80px 0;margin-top: 70px;}
 .recipe-faqs h2{color: var(--heading-color);text-align: center;font-family:var(--name-font);font-size: 55px;font-style: normal;font-weight: 400;line-height: 1.39;letter-spacing: 0.825px;}
 .faq-accordion{position: relative;}
-.faq-question{border-radius: 10px;border: 2px solid #D4D4D4;  background: #FFF9F1;color: var(--heading-color);font-size: 24px;font-style: normal;font-weight: 500;line-height: 1.17;letter-spacing: 0.96px;margin-top: 48px;    padding: 12px 50px 12px 20px; z-index: 1;position: relative;min-height: 71px;display: flex; align-items: center;cursor: pointer;}
-.faq-answer{border: 1.375px solid #D4D4D4;padding: 30px; margin-top: -5px;display: none;}
+.faq-question{border-radius: 10px;border: 2px solid var(--gray-second);  background: var(--gray-bg);color: var(--heading-color);font-size: 24px;font-style: normal;font-weight: 500;line-height: 1.17;letter-spacing: 0.96px;margin-top: 48px;    padding: 12px 50px 12px 20px; z-index: 1;position: relative;min-height: 71px;display: flex; align-items: center;cursor: pointer;}
+.faq-answer{border: 1.375px solid var(--gray-second);padding: 30px; margin-top: -5px;display: none;}
 .faq-accordion .item:first-child .faq-answer{display: block;}
 .faq-accordion .item .faq-question::after {content: '+';font-size: 41.241px;font-style: normal;font-weight: normal;position: absolute;right: 22px;width: 22px;text-align: center;top: 45%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);}
 .faq-accordion .item.active .faq-question::after {  content: '-';}
@@ -596,7 +597,7 @@ footer{background-color: var(--gray-bg);}
 .recipe-variations h2{color: var(--heading-color);text-align: center;font-family:var(--name-font);font-size: 55px;font-style: normal;font-weight: 400;line-height: 1.65;letter-spacing: 0.825px;}
 .recipe-variations-list .item{padding-left: 44px;position: relative;margin-top: 51px;}
 .recipe-variations-list .item::before{content: "";position: absolute;left: 0;top: 8px;width: 18px;aspect-ratio: 100/100;background-color: var(--orange);border:1px solid var(--black);border-radius: 100%;z-index: 1;}
-.recipe-variations-list .item::after{content: "";position: absolute;left: 8px;top: 14px;height: 100%;width: 1px;background-color: #D9D9D9;height: calc(100% + 51px);}
+.recipe-variations-list .item::after{content: "";position: absolute;left: 8px;top: 14px;height: 100%;width: 1px;background-color: var(--gray-second);height: calc(100% + 51px);}
 .recipe-variations-list .item:last-child::after{display: none;}
 .trending-products{display: flex;flex-wrap: wrap;}
 .trending-products{margin: 0 -12px;margin-top: 45px;}
@@ -632,9 +633,10 @@ footer{background-color: var(--gray-bg);}
   p {font-size: 18px;}
   .custom-container,
   .custom-container-large{max-width: 1200px;}
-  .sec-heading h2{font-size: 20px;}
+  .sec-heading h2{font-size: 20px;letter-spacing: 3px;}
   .sec-heading h2::before, .sec-heading h2::after {width: 48px;}
   .sec-heading h4{font-size: 40px !important;}
+  .sec-heading h3{font-size: 40px;}
   .sec-heading p {font-size: 18px;margin-top: 25px;}
   .logo a img{max-height: 50px;}
   .header-menu > ul > li {padding: 0 20px;}
@@ -642,6 +644,7 @@ footer{background-color: var(--gray-bg);}
   .input-field input {padding: 10px 15px;font-size: 20px;}
   .banner {padding: 50px 0;}
   .banner-content .pattern-2 img {max-width: 250px;}
+  .banner-slider .sec-heading p {max-width: 100%;}
   .subscribe .wrapper{padding: 50px 0;}
   .concoctions{padding: 50px 0;}
   .concoctions .product-list {margin-top: 30px;}
@@ -671,6 +674,18 @@ footer{background-color: var(--gray-bg);}
 
   .contact-head{padding: 50px 0;}
   .contact-me{padding: 50px 0;}
+
+  .recipes-details-right { width: 35%;}
+  .recipes-details-banner .date, .recipes-details-banner .category {font-size: 22px;margin: 10px 0;}
+  .recipes-details-banner .buttons .btn-custom-orange { padding-left: 10px;padding-right: 10px; margin: 0 5px;    font-size: 20px;}
+  .recipes-details-banner .buttons {margin-top: 15px;}
+  .recipes-details-left .main-description h4, .recipes-details-left .main-description h2, .recipes-details-left .main-description h3, .recipes-details-left .main-description h5, .recipes-details-left .main-description h6{    font-size: 40px;margin-top: 25px;}
+  .recipes-details-left .main-description p {margin-top: 25px;font-size: 18px;}
+  .recipes-details-left .main-description img{margin-top: 25px;}
+  .step-by-step h2,.recipe-faqs h2,.recipe-variations h2{font-size: 40px;}
+  .trending-products p{font-size: 18px;}
+  .recipes-cookbook .desc h3 {font-size: 24px;}
+
  
 
   
@@ -679,9 +694,10 @@ footer{background-color: var(--gray-bg);}
   p {font-size: 18px;}
   .custom-container,
   .custom-container-large{max-width: 992px;}
-  .sec-heading h2{font-size: 18px;}
+  .sec-heading h2{font-size: 18px;letter-spacing: 2.5px;}
   .sec-heading h2::before, .sec-heading h2::after {width: 40px;}
   .sec-heading h4{font-size: 28px !important;}
+  .sec-heading h3{font-size: 36px;}
   .sec-heading p {font-size: 18px;margin-top: 15px;}
   .btn-custom-orange{font-size: 20px;    padding: 12px 25px;}
   .input-field input {padding: 6px 10px;font-size: 16px;}
@@ -755,14 +771,41 @@ footer{background-color: var(--gray-bg);}
   .button-pin{font-size: 20px;}
   .most-popular-list .item .content {padding-left: 30px;}
 
+  .recipes-details-right {width: 35%;    padding: 20px;}
+  .recipes-details-banner .date, 
+  .recipes-details-banner .category {font-size: 18px;letter-spacing: 1px;margin: 8px 0;}
+  .recipes-details-banner .buttons {margin-top: 15px;}
+  .recipes-details-banner .buttons .btn-custom-orange {padding-left: 10px;padding-right: 10px;margin: 0 5px;
+    font-size: 16px;}
+    .recipes-details-left .main-description h4, .recipes-details-left .main-description h2, .recipes-details-left .main-description h3, .recipes-details-left .main-description h5, .recipes-details-left .main-description h6 {font-size: 36px;margin-top: 20px;}
+    .recipes-details-left .main-description p{font-size: 18px;margin-top: 20px;}
+    .recipes-details-left .main-description img{margin-top: 20px;}
+    .step-by-step h2{font-size: 36px;}
+    .step-list .content p{font-size:18px;}
+    .step-list .content {padding: 20px;}
+    .step-by-step .view-video{margin-top: 40px;}
+    .recipe-faqs{padding: 40px 0;margin-top: 40px;}
+    .recipe-faqs h2{font-size: 36px;}
+    .recipe-variations{padding: 40px 0;}
+    .recipe-variations h2{font-size: 36px;}
+    .trending-products p{font-size: 18px;}
+    .other-product .product-box h4{padding: 0;}
+    .recipes-cookbook{padding: 40px 0;}
+    .other-product{padding: 40px 0;}
+    .recipes-cookbook .desc h3 {font-size: 22px;}
+
+
+
+
 
 }
 @media only screen and (min-width: 768px) and (max-width:991px) {
   p {font-size: 16px;}
   .custom-container,
   .custom-container-large{max-width: 767px;}
-  .sec-heading h2{font-size: 16px;}
+  .sec-heading h2{font-size: 16px;letter-spacing: 2px;}
   .sec-heading h2::before, .sec-heading h2::after {width: 40px;}
+  .sec-heading h3{font-size: 30px;    margin-top:15px;}
   .sec-heading h4{font-size: 24px !important;}
   .sec-heading p {font-size: 16px;margin-top: 15px;}
   .read-more {margin-top: 15px;}
@@ -865,6 +908,45 @@ footer{background-color: var(--gray-bg);}
   .most-popular-list .item { margin-top: 15px;}
   .most-popular-list .item .content { padding-left: 15px;}
 
+  .recipes-details-banner .date, 
+  .recipes-details-banner .category {font-size: 16px;letter-spacing: 0.5px;margin: 5px 0;}
+  .recipes-details-banner .buttons {margin-top: 15px;}
+  .recipes-details-banner .buttons .btn-custom-orange {padding-left: 10px;padding-right: 10px; margin: 0 5px;}
+  .recipes-details-part{padding: 25px 0;}
+  .recipes-details-right {width: 35%;padding: 10px;}
+  .recipes-details-left .main-description h4, .recipes-details-left .main-description h2, .recipes-details-left .main-description h3, .recipes-details-left .main-description h5, .recipes-details-left .main-description h6{font-size: 24px;margin-top: 15px;}
+  .recipes-details-left .main-description p{font-size: 16px;margin-top: 15px;}
+  .recipes-details-left .main-description img{margin-top: 15px;}
+  .happy-cooking {font-size: 22px;line-height: 2;}
+  .step-by-step h2 {font-size: 24px;}
+  .step-list {margin-top: 10px;}
+  .step-list .content p{font-size: 16px;}
+  .step-list .content{padding: 15px;min-height: 200px;}
+  .morelink{font-size: 16px;}
+  .step-list .item {padding: 8px;}
+  .step-by-step .view-video{margin-top: 20px;}
+  .recipe-faqs{padding: 25px 0; margin-top:25px;}
+  .recipe-faqs h2 {font-size: 24px;}
+  .faq-question {font-size: 16px;    margin-top: 20px;}
+  .faq-accordion .item:first-child .faq-answer {padding: 15px;}
+  .recipe-variations h2 {font-size: 30px;}
+  .recipe-variations{padding: 15px 0;}
+  .recipe-variations-list .item {padding-left: 30px; margin-top: 20px;}
+  .recipe-variations-list .item::before{top:2px;}
+  .recipe-variations-list .item::after{height: calc(100% + 20px);}
+  .trending-products{margin-top: 20px;}
+  .trending-products p{font-size:16px;}
+  .vasant-balan-details .social-media a {margin: 0 10px;}
+  .other-product{padding: 25px 0;}
+  .other-product .list{margin-top: 0;}
+  .other-product .product-box h4{padding: 0;font-size: 16px;}
+  .recipes-cookbook {padding: 0 0 15px 0;}
+  .recipes-cookbook .desc h3 {font-size: 20px;}
+
+
+
+
+
   
 }
 @media only screen and (min-width: 768px){
@@ -879,6 +961,8 @@ footer{background-color: var(--gray-bg);}
   .sec-heading h2::before, .sec-heading h2::after {width: 30px;}
   .sec-heading h2::before {margin-right: 5px;}
   .sec-heading h2::after {margin-left: 5px;}
+  .sec-heading h3 {font-size: 24px;margin-top: 15px;}
+
 
 
   .sec-heading h4{font-size: 20px !important;margin-top: 10px;}
@@ -1013,6 +1097,48 @@ footer{background-color: var(--gray-bg);}
   .most-popular-list .item{margin-top: 20px;}
   .most-popular-list .item .content { padding-left: 15px;}
 
+  .recipes-details-part .custom-container-large{padding: 0;}
+  .recipes-details-banner .date, .recipes-details-banner .category{font-size: 16px;margin: 10px 0;}
+  .recipes-details-banner .buttons .btn-custom-orange {padding-left: 10px;padding-right: 10px;margin: 0 5px;font-size: 14px;}
+  .recipes-details-banner .buttons{margin:15px 0 15px;}
+  .recipes-details-part{padding: 15px 0;}
+  .recipes-details-left{width: 100%;padding: 0 15px;}
+  .recipes-details-left .main-description h4, .recipes-details-left .main-description h2, .recipes-details-left .main-description h3, .recipes-details-left .main-description h5, .recipes-details-left .main-description h6{font-size: 20px;margin-top: 15px;}
+  .recipes-details-left .main-description p{font-size: 14px;margin-top: 15px;}
+  .recipes-details-left .main-description img{margin-top: 15px;}
+  .happy-cooking {font-size: 20px;}
+  .step-by-step h2{font-size: 24px;}
+  .step-list{margin-top: 15px;}
+  .step-list .content{padding: 10px;}
+  .step-list .content p{font-size: 14px;}
+  .morelink{font-size: 12px;}
+  .step-list .content {min-height: 100px;}
+  .step-by-step .view-video{margin-top: 15px;}
+  .recipe-faqs{margin-top: 15px;padding: 15px 0;}
+  .recipe-faqs h2{font-size: 20px;}
+  .faq-question{margin-top: 15px;padding-left: 12px;padding-right: 40px; font-size: 14px;}
+  .faq-accordion .item .faq-question::after{right: 10px;font-size: 30px;}
+  .faq-answer{padding: 12px;}
+  .recipe-variations{padding:15px 0;}
+  .recipe-variations h2{font-size: 24px;}
+  .recipe-variations-list .item{margin-top: 20px;padding-left: 30px;}
+  .recipe-variations-list .item::before {top:0;}
+  .recipe-variations-list .item::after {    height: calc(100% + 20px);}
+  .trending-products{margin-top: 15px;}
+  .trending-products p{font-size: 14px;}
+  .recipes-details-right{width: 100%;margin-top: 25px;padding: 15px;}
+  .other-product{padding: 15px 0;}
+  .other-product .list{margin-top: 0;}
+  .other-product .product-box h4 {font-size: 16px;padding: 0;}
+  .recipes-cookbook{padding: 0 0 25px;}
+  .recipes-cookbook .desc h3 {font-size: 20px;}
+  .recipes-cookbook .desc p{margin-top: 10px;}
+
+  
+
+
+  
+
 
 
 
@@ -1022,6 +1148,9 @@ footer{background-color: var(--gray-bg);}
   .trending .product-list .item{width: 50%;}
   .tempting-link .item{width:50%;margin: 0;}
   .instagram-images .item{width:25%;}
+  .step-list .item{width: 100%;padding: 8px 0;}
+  .step-list .content{min-height: inherit;}
+  .trending-products .item{width: 50%;}
 }
 
 
